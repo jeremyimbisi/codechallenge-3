@@ -16,3 +16,16 @@
     max-width: 200px;
     margin-bottom: 10px;
   }
+
+
+  #buy-ticket {
+    margin-top: 10px;
+  }
+  
+  .film.sold-out {
+    color: red;
+  }
+  
+  .film-item {
+    cursor: pointer;
+  }
