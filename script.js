@@ -23,3 +23,23 @@ function getFilmData(url, callback) {
     ticketsAvailable.textContent = availableTickets;
     buyTicketBtn.disabled = availableTickets === 0;
 }
+
+    // Function to update the films menu on the page
+function updateFilmsMenu(films) {
+    const filmsMenu = document.getElementById('films');
+  
+    films.forEach(film => {
+      const li = document.createElement('li');
+      li.classList.add('film-item');
+      li.textContent = film.title;
+      li.addEventListener('click', () => {
+        updateMovieDetails(film);
+        const selectedFilm = document.querySelector('.film.selected');
+        if (selectedFilm) {
+          selectedFilm.classList.remove('selected');
+        }
+        li.classList.add('selected');
+      });
+      filmsMenu.appendChild(li);
+    });
+  }
