@@ -43,3 +43,9 @@ function updateFilmsMenu(films) {
       filmsMenu.appendChild(li);
     });
   }
+
+  // Make GET request to retrieve the first movie's details
+getFilmData('/films/1', updateMovieDetails);
+
+// Make GET request to retrieve all movies
+getFilmData('/films', updateFilmsMenu);
