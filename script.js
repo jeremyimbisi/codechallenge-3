@@ -13,4 +13,13 @@ function getFilmData(url, callback) {
     const movieRuntime = document.getElementById('movie-runtime');
     const movieShowtime = document.getElementById('movie-showtime');
     const ticketsAvailable = document.getElementById('tickets-available');
-    const buyTicketBtn = documen
+    const buyTicketBtn = document.getElementById('buy-ticket');
+
+    movieTitle.textContent = movie.title;
+    moviePoster.src = movie.poster;
+    movieRuntime.textContent = movie.runtime + ' mins';
+    movieShowtime.textContent = movie.showtime;
+    const availableTickets = movie.capacity - movie.tickets_sold;
+    ticketsAvailable.textContent = availableTickets;
+    buyTicketBtn.disabled = availableTickets === 0;
+}
