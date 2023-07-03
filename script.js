@@ -1,4 +1,4 @@
-// Function to make GET request to retrieve film data
+// Function to make GET request to receive film data
 function getFilmData(url, callback) {
     fetch(url)
       .then(response => response.json())
@@ -6,7 +6,7 @@ function getFilmData(url, callback) {
       .catch(error => console.log(error));
   }
   
-  // Function to update movie details on the page
+  // Function to update movies details 
   function updateMovieDetails(movie) {
     const movieTitle = document.getElementById('movie-title');
     const moviePoster = document.getElementById('movie-poster');
