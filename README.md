@@ -19,11 +19,11 @@ CSS
 JAVASCRIPT
 GITHUB
 
-#Known Bugs
+##Known Bugs
 
 There are no known bugs, incase of any please raise an issue
 
-#Support and Contacts
+###Support and Contacts
 
 You can reach me on +254703883049
 
