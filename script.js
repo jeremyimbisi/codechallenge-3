@@ -14,7 +14,7 @@ function getFilmData(url, callback) {
     const movieShowtime = document.getElementById('movie-showtime');
     const ticketsAvailable = document.getElementById('tickets-available');
     const buyTicketBtn = document.getElementById('buy-ticket');
-
+  
     movieTitle.textContent = movie.title;
     moviePoster.src = movie.poster;
     movieRuntime.textContent = movie.runtime + ' mins';
@@ -22,10 +22,10 @@ function getFilmData(url, callback) {
     const availableTickets = movie.capacity - movie.tickets_sold;
     ticketsAvailable.textContent = availableTickets;
     buyTicketBtn.disabled = availableTickets === 0;
-}
-
-    // Function to update the films menu on the page
-function updateFilmsMenu(films) {
+  }
+  
+  // Function to update the films menu on the page
+  function updateFilmsMenu(films) {
     const filmsMenu = document.getElementById('films');
   
     films.forEach(film => {
@@ -43,9 +43,10 @@ function updateFilmsMenu(films) {
       filmsMenu.appendChild(li);
     });
   }
-
+  
   // Make GET request to retrieve the first movie's details
-getFilmData('/films/1', updateMovieDetails);
-
-// Make GET request to retrieve all movies
-getFilmData('/films', updateFilmsMenu);
+  getFilmData('http://localhost:3000/films', updateMovieDetails);
+  
+  // Make GET request to retrieve all movies
+  getFilmData('http://localhost:3000/films', updateFilmsMenu);
+  
