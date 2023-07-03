@@ -14,10 +14,10 @@ git origin push main
 
 # Technologies used
 
-HTML
-CSS
-JAVASCRIPT
-GITHUB
+- HTML
+- CSS
+- JAVASCRIPT
+- GITHUB
 
 # Known Bugs
 
