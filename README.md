@@ -2,11 +2,8 @@
 
 ## Author
 
- ### Jeremy Imbisi
----
+### Jeremy Imbisi
 
- 
- ```
 # Project setup and instuctions
 
 git clone https://github.com/jeremyimbisi/codechallenge-3.git
